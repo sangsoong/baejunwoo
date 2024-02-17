@@ -1,3 +1,5 @@
+# https://jaraworkshop.tistory.com/4
+
 import tkinter as tk
 import tkinter.font
 from tkinter import messagebox as msg

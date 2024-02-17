@@ -25,7 +25,7 @@ print(f'{s}에서 첫번째 "Python"는 인덱스 {s.find('Python')}에서 시�
 print(f'{s}에서 첫번째 "o"는 인덱스 {s.index('o')}에 있습니다.')
 #print(f'{s}에서 첫번째 "z"는 인덱스 {s.index('z')}에 있습니다.')
 
-# upper, lower
+# upper, lower : 복사본
 print(s.upper())
 print(s.lower())
 
@@ -47,3 +47,35 @@ s = '     Python     '
 print('left' + s.lstrip() + 'right')
 print('left' + s.rstrip() + 'right')
 print('left' + s.strip() + 'right')
+
+# 리스트의 메소드
+# extend : 반환값 없음
+li = [1, 2, 3]
+print(li.extend([4, 5]))
+print(li)
+
+# pop
+li.pop()
+print(li)
+print(li.pop(2))
+
+# remove
+li = [1, 2, 3, 4, 5]
+li.remove(3)
+print(li)
+
+# 세트의 메소드
+s1 = {10, 20, 30, }
+s2 = set([20, 30, 40]) # 주류
+
+# s1 & s2 : 교집합
+s3 = s1 & s2 # 또는 s1.intersection(s2)
+print(s3)
+
+# s1 | s2 : 합집합
+s3 = s1 | s2 # 또는 s1.union(s2)
+print(s3)
+
+# s1 - s2 : 차집합
+s3 = s1 - s2 # 또는 s1.difference(s2)
+print(s3)
