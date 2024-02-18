@@ -30,3 +30,13 @@ def greet(message:str, temp:int=2, count:int=1):
 greet('안녕하세요')
 greet('안녕하세요', 2, 2)
 greet('안녕하세요', 3, 3)
+
+def my_divmod(num1:int, num2:int):
+    mok = num1 // num2
+    nam = num1 % num2
+    return mok, nam
+
+val1, val2 = my_divmod(4, 3)
+print(val1, val2)
+values = my_divmod(4, 3)
+print(values)
